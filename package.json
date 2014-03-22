@@ -1,0 +1,22 @@
+{
+  "name": "gaffa-delay",
+  "author": "Kory Nunn <knunn187@gmail.com>",
+  "version": "1.0.0",
+  "main": "delay.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KoryNunn/gaffa-delay.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KoryNunn/gaffa-delay/issues"
+  },
+  "keywords": [
+    "gaffa",
+    "delay",
+    "action"
+  ],
+  "peerDependencies": {
+    "gaffa": "^1.0.0"
+  },
+  "license": "MIT"
+}
