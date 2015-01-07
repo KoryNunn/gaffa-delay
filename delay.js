@@ -3,7 +3,8 @@ var Gaffa = require('gaffa'),
 
 function Delay(){}
 Delay = Gaffa.createSpec(Delay, Gaffa.Action);
-Delay.prototype.type = actionType;
+Delay.prototype._type = actionType;
+Delay.prototype._async = true;
 Delay.prototype.delay = new Gaffa.Property();
 
 Delay.prototype.trigger = function(parent, scope, event) {
@@ -12,6 +13,7 @@ Delay.prototype.trigger = function(parent, scope, event) {
 
     setTimeout(function(){
         action.triggerActions('trigger', scope, event);
+        action.complete();
     }, this.delay.value);
 };
 
